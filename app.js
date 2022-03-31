@@ -36,20 +36,38 @@ adityatawade.onclick = async (e) => {
       
      // var form = document.forms[0];
 
-     numStatus = form.querySelector('input[name="fresh_status"]').value
-     numStatus1 = Number(numStatus)
+    //  numStatus = form.querySelector('input[name="fresh_status"]').value
+    //  numStatus1 = Number(numStatus)
 
-     numPriority = form.querySelector('input[name="priority"]').value
-     numPriority1 = Number(numPriority)
+    //  numPriority = form.querySelector('input[name="priority"]').value
+    //  numPriority1 = Number(numPriority)
 
-    console.log(numStatus1)
+    // console.log(numStatus1)
+    
+    //     data = {
+    //       subject : form.querySelector('input[name="subject"]').value,
+    //       description : form.querySelector('input[name="description"]').value,
+    //       email : form.querySelector('input[name="email"]').value,
+    //       status : numStatus1,
+    //       priority: numPriority1
+    //     //   Phone_No : form.querySelector('input[name="phone"]').value,
+    //     //   Comment : form.querySelector('input[name="comment"]').value,
+    //     }
+
+    // numStatus = form.querySelector('input[name="fresh_status"]').value
+    //  numStatus1 = Number(numStatus)
+
+    //  numPriority = form.querySelector('input[name="priority"]').value
+    //  numPriority1 = Number(numPriority)
+
+    // console.log(numStatus1)
     
         data = {
           subject : form.querySelector('input[name="subject"]').value,
           description : form.querySelector('input[name="description"]').value,
           email : form.querySelector('input[name="email"]').value,
-          status : numStatus1,
-          priority: numPriority1
+          status : Number(form.querySelector('input[name="fresh_status"]').value),
+          priority: Number(form.querySelector('input[name="priority"]').value)
         //   Phone_No : form.querySelector('input[name="phone"]').value,
         //   Comment : form.querySelector('input[name="comment"]').value,
         }
